@@ -57,16 +57,16 @@ $(function() {
         $(this).addClass('active');
     });
 
-    // portfolio magnific popup
-    $('.portfolio').each(function() { // the containers for all your galleries
-        $(this).magnificPopup({
-            delegate: '.portfolio-popup', // the selector for portfolio item
-            type: 'image',
-            gallery: {
-                enabled: true
-            }
-        });
-    });
+    // // portfolio magnific popup
+    // $('.portfolio').each(function() { // the containers for all your galleries
+    //     $(this).magnificPopup({
+    //         delegate: '.portfolio-popup', // the selector for portfolio item
+    //         type: 'image',
+    //         gallery: {
+    //             enabled: true
+    //         }
+    //     });
+    // });
 
     // navbar on scroll
     $(window).on("scroll", function() {

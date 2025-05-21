@@ -1,560 +1,962 @@
 <!DOCTYPE html>
 <html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" href="images/favicon.png">
+    <link rel="icon" href="images/favicon.png" />
     <title>Julie Ibarra - Portfolio</title>
 
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- end font -->
 
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/fakeLoader.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/fakeLoader.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- loader -->
     <div class="fakeLoader"></div>
     <!-- loader -->
 
     <!-- header -->
     <header id="home">
+      <!-- navbar -->
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <!-- navbar brand or logo -->
+          <a href="#" class="navbar-brand">
+            <h2>Julie Ibarra</h2>
+          </a>
+          <!-- end navbar brand or logo -->
 
-        <!-- navbar -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo"
+            aria-controls="navbarTogglerDemo"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div id="navbarTogglerDemo" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#resume" class="nav-link">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- end navbar -->
+
+      <!-- home intro -->
+      <div class="home-intro segments">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-
-                <!-- navbar brand or logo -->
-                <a href="#" class="navbar-brand">
-                    <h2>Julie Ibarra</h2>
-                </a>
-                <!-- end navbar brand or logo -->
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo" aria-controls="navbarTogglerDemo" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div id="navbarTogglerDemo" class="collapse navbar-collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a href="#home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#resume" class="nav-link">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#portfolio" class="nav-link">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
+          <div class="intro-content box-content">
+            <div class="row justify-content-center">
+              <div class="col-md-8 col-sm-12 col-xs-12">
+                <div class="intro-caption">
+                  <span>I am Julie Ibarra</span>
+                  <h2>Multimedia<br />Engineer</h2>
+                  <button class="button">
+                    <a href="#contact">Contact Me</a>
+                  </button>
                 </div>
-            </nav>
-        </div>
-        <!-- end navbar -->
-
-        <!-- home intro -->
-        <div class="home-intro segments">
-            <div class="container">
-                <div class="intro-content box-content">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 col-sm-12 col-xs-12">
-                            <div class="intro-caption">
-                                <span>I am Julie Ibarra</span>
-                                <h2>Multimedia<br>Engineer</h2>
-                                <button class="button"><a href="#contact">Contact Me</a></button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-12 col-xs-12">
-                            <div class="intro-image">
-                                <img src="images/intro-image.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <div class="intro-image">
+                  <img src="images/JulieIbarra.png" alt="" />
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- end home intro -->
-
+      </div>
+      <!-- end home intro -->
     </header>
     <!-- end header -->
 
     <!-- about -->
     <div id="about" class="about segments">
-        <div class="container">
-            <div class="box-content">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="content-left">
-                            <div class="section-title section-title-left">
-                                <h3>About Me</h3>
-                            </div>
-                            <div class="content">
-                                <h2>I am a Multimedia Engineer</h2>
-                                <p>interested in the combination of technology and human sciences that can be applied to the different fields of my career, especially UI/UX design and therefore, the frontend, as I am also a passionate reconstructionist of medieval history.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="content-right"></div>
-                    </div>
+      <div class="container">
+        <div class="box-content">
+          <div class="row">
+            <div
+              class="col-md-6 col-sm-12 col-xs-12"
+              style="max-width: 100%; flex: auto"
+            >
+              <div class="content-left">
+                <div class="section-title section-title-left">
+                  <h3>About Me</h3>
                 </div>
+                <div class="content">
+                  <h2>Focused on Web Development and Design</h2>
+                  <p style="font-size: 16px">
+                    I explore the intersection of technology and human sciences
+                    to create thoughtful digital experiences. With a focus on
+                    UI/UX and frontend development, I approach each project
+                    combining creativity, usability, and precision. My
+                    involvement in medieval history reconstruction also brings a
+                    unique perspective to my design process.
+                  </p>
+                  <!-- <img src="images/CollagePortafolio.png" alt=""> -->
+                  <div class="division"></div>
+                </div>
+              </div>
             </div>
+            <!-- <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="content-right"></div>
+            </div> -->
+          </div>
         </div>
+      </div>
     </div>
     <!-- end about -->
 
     <!-- resume -->
     <div id="resume" class="resume segments">
-        <div class="container">
-            <div class="box-content">
-                <div class="section-title">
-                    <h3>My Resume</h3>
+      <div class="container">
+        <div class="box-content">
+          <div class="section-title">
+            <h3>My Resume</h3>
+          </div>
+          <div class="owl-carousel owl-theme">
+            <div class="content">
+              <!-- my experience -->
+              <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="content-left">
+                    <div class="title-resume">
+                      <h3>Experience</h3>
+                      <h2>
+                        In different areas of
+                        <span> development, design </span> and
+                        <span> multimedia production</span>
+                      </h2>
+                    </div>
+                  </div>
                 </div>
-                <div class="owl-carousel owl-theme">
-                    <div class="content">
-                        <!-- my experience -->
-                        <div class="row ">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="content-left">
-                                    <div class="title-resume">
-                                        <h3>Experience</h3>
-                                        <h2>In different areas of <span>design, development </span> and <span> multimedia production</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="content-right">
-                                    <ul class="timeline">
-                                        <li>
-                                            <h4>Pedalea a la Mili</h4>
-                                            <span>UX/UI & Graphic Designer - Mobile Developer (February, 2023 - Present)</span>
-                                        </li>
-                                        <li>
-                                            <h4>Naska Digital</h4>
-                                            <span>Web/Multimedia Designer (March to October, 2023)</span>
-                                        </li>
-                                        <li>
-                                            <h4>Dicapta</h4>
-                                            <span>UI Designer - Video Editor (March to April, 2023 - August to September, 2023)</span>
-                                        </li>
-                                        <li>
-                                            <h4>Fundación Surcos & UMNG</h4>
-                                            <span>UI/UX Designer - Unity Developer (March to June, 2023)</span>
-                                        </li>
-                                        <li>
-                                            <h4>Saborit Express, Inc</h4>
-                                            <span>Fullstack Developer (July to November, 2021)</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end my experience -->
-                    </div>
-                    <div class="content">
-                        <!-- my education -->
-                        <div class="row ">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="content-left">
-                                    <div class="title-resume">
-                                        <h3>Education</h3>
-                                        <h2>Learning experience at <span>qualified institutions</span></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-xs-12">
-                                <div class="content-right">
-                                    <ul class="timeline">
-                                        <li>
-                                            <h4>Universidad Militar Nueva Granada</h4>
-                                            <span>Multimedia Engineer (2019 - Present)</span>
-                                        </li>
-                                        <li>
-                                            <h4>Naska Digital & Cámara de Comercio de Bogotá</h4>
-                                            <span>Video game Training Program Certificate (2023)</span>
-                                        </li>
-                                        <li>
-                                            <h4>Colegio de Nuestra Señora de la Presentación - Centro</h4>
-                                            <span>Bachelor's Degree with a specialization in Mathematics and Computer Science (2018)</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end my education -->
-                    </div>
-                    <div class="content">
-                        <!-- my skill -->
-                        <div class="my-skill">
-                            <div class="row ">
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <div class="content-left">
-                                        <div class="title-resume">
-                                            <h3>Skill</h3>
-                                            <h2>With good <span>Personal</span> and <span>Professional Skills</span></h2>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-12 col-xs-12">
-                                    <div class="content-right">
-                                        <div id="accordionSkill" class="accordion">
-                                            <div class="card">
-                                                <div id="personalSkill" class="card-header">
-                                                    <h2>
-                                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                                            <i class="fas fa-circle"></i>Personal Skill
-                                                        </button>
-                                                    </h2>
-                                                </div>
-
-                                                <div id="collapse1" class="collapse collapse-show" aria-labelledby="personalSkill" data-parent="#accordionSkill">
-                                                    <div class="card-body">
-                                                        <ul class="personalSkill">
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Creativity</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 93%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Research</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 87%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Adaptability</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Communication</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Teamwork</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 66%"></div>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="card">
-                                                <div id="proSkill" class="card-header">
-                                                    <h2>
-                                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                                            <i class="fas fa-circle"></i>Professional Skill
-                                                        </button>
-                                                    </h2>
-                                                </div>
-
-                                                <div id="collapse2" class="collapse" aria-labelledby="proSkill" data-parent="#accordionSkill">
-                                                    <div class="card-body">
-                                                        <ul class="pro-skill">
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Graphic Design</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 93%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>UX/UI Design</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 87%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Responsive Web Design</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>HTML, CSS & JavaScript</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-                                                                </div>
-                                                            </li>
-                                                            <li>
-                                                                <div class="skill-title">
-                                                                    <span>Content Management</span>
-                                                                </div>
-                                                                <div class="progress">
-                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
-                                                                </div>
-                                                            </li>
-                                                            
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end my skill -->
-                    </div>
-                </div>                
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="content-right">
+                    <ul class="timeline">
+                      <li>
+                        <h4>Bilingual Child Care Training</h4>
+                        <span>
+                          Fullstack Developer (February, 2024 - Present)
+                        </span>
+                      </li>
+                      <li>
+                        <h4>Oblicua</h4>
+                        <span>
+                          Fullstack Developer (February, 2025 - May, 2025)
+                        </span>
+                      </li>
+                      <li>
+                        <h4>Naska Digital</h4>
+                        <span>
+                          Web/Multimedia Designer (March, 2023 - September,
+                          2023)
+                        </span>
+                      </li>
+                      <li>
+                        <h4>Dicapta</h4>
+                        <span>
+                          UI Designer - Video Editor (March to April, 2023 -
+                          August to September, 2023)
+                        </span>
+                      </li>
+                      <li>
+                        <h4>Fundación Surcos</h4>
+                        <span>
+                          UI/UX Designer - Unity Developer (March to June, 2023)
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- end my experience -->
             </div>
+            <div class="content">
+              <!-- my education -->
+              <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="content-left">
+                    <div class="title-resume">
+                      <h3>Education</h3>
+                      <h2>
+                        Learning experience at
+                        <span>qualified institutions</span>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                  <div class="content-right">
+                    <ul class="timeline">
+                      <li>
+                        <h4>Universidad Militar Nueva Granada</h4>
+                        <span> Multimedia Engineer (2019 - 2024) </span>
+                      </li>
+                      <li>
+                        <h4>Udemy</h4>
+                        <span> Modern Web Animations (2025) </span>
+                      </li>
+                      <li>
+                        <h4>Lottie Files</h4>
+                        <span> Figma to Lottie Course (2024) </span>
+                      </li>
+                      <li>
+                        <h4>Naska Digital & Cámara de Comercio de Bogotá</h4>
+                        <span>
+                          Video game Training Program Certificate (2023)
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- end my education -->
+            </div>
+            <div class="content">
+              <!-- my skill -->
+              <div class="my-skill">
+                <div class="row">
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="content-left">
+                      <div class="title-resume">
+                        <h3>Skill</h3>
+                        <h2>
+                          With good <span>Personal</span> and
+                          <span>Professional Skills</span>
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="content-right">
+                      <div id="accordionSkill" class="accordion">
+                        <div class="card">
+                          <div id="personalSkill" class="card-header">
+                            <h2>
+                              <button
+                                class="btn btn-link"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse1"
+                                aria-expanded="true"
+                                aria-controls="collapse1"
+                              >
+                                <i class="fas fa-circle"></i>Professional Skill
+                              </button>
+                            </h2>
+                          </div>
+
+                          <div
+                            id="collapse1"
+                            class="collapse collapse-show"
+                            aria-labelledby="personalSkill"
+                            data-parent="#accordionSkill"
+                          >
+                            <div class="card-body">
+                              <ul class="personalSkill">
+                                <li>
+                                  <div class="skill-title">
+                                    <span
+                                      ><b>Frontend Development</b> - HTML5,
+                                      CSS3, JavaScript, React.js,
+                                      Wordpress</span
+                                    >
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="98"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 93%"
+                                    ></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="skill-title">
+                                    <span
+                                      ><b>UX/UI Design</b> - Figma, Design
+                                      Thinking, Usability testing</span
+                                    >
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="98"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 87%"
+                                    ></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="skill-title">
+                                    <span
+                                      ><b>Backend Development</b> - PHP,
+                                      Node.js, REST APIs, database
+                                      integration</span
+                                    >
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="70"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 85%"
+                                    ></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="skill-title">
+                                    <span
+                                      ><b>Multimedia Tools </b>- After Effects,
+                                      Adobe Illustrator, Photoshop, Unity,
+                                      Unreal</span
+                                    >
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="90"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 75%"
+                                    ></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="skill-title">
+                                    <span
+                                      ><b>Methodologies</b> - Agile, Scrum</span
+                                    >
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="75"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 70%"
+                                    ></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="card">
+                          <div id="proSkill" class="card-header">
+                            <h2>
+                              <button
+                                class="btn btn-link collapsed"
+                                type="button"
+                                data-toggle="collapse"
+                                data-target="#collapse2"
+                                aria-expanded="false"
+                                aria-controls="collapse2"
+                              >
+                                <i class="fas fa-circle"></i>Personal Skill
+                              </button>
+                            </h2>
+                          </div>
+
+                          <div
+                            id="collapse2"
+                            class="collapse"
+                            aria-labelledby="proSkill"
+                            data-parent="#accordionSkill"
+                          >
+                            <div class="card-body">
+                              <ul class="pro-skill">
+                                <li>
+                                  <div class="skill-title">
+                                    <span>Research</span>
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="85"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 93%"
+                                    ></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="skill-title">
+                                    <span>Communication</span>
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="80"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 87%"
+                                    ></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="skill-title">
+                                    <span>Creativity</span>
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="95"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 75%"
+                                    ></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="skill-title">
+                                    <span>Teamwork</span>
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="90"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 70%"
+                                    ></div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="skill-title">
+                                    <span>Adaptability</span>
+                                  </div>
+                                  <div class="progress">
+                                    <div
+                                      class="progress-bar"
+                                      role="progressbar"
+                                      aria-valuenow="95"
+                                      aria-valuemin="0"
+                                      aria-valuemax="100"
+                                      style="width: 66%"
+                                    ></div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end my skill -->
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- end resume -->
 
     <!-- portfolio -->
     <div id="portfolio" class="portfolio segments">
-        <div class="container">
-            <div class="box-content">
-                <div class="section-title">
-                    <h3>My Portfolio</h3>
-                </div>
-                <div class="portfolio-filter-menu">
-                    <ul>
-                        <li data-filter="all" class="active">
-                            <span>See All</span>
-                        </li>
-                        <li data-filter="1">
-                            <span>UI/UX Design</span>
-                        </li>
-                        <li data-filter="2">
-                            <span>Video games and Applications</span>
-                        </li>
-                        <li data-filter="3">
-                            <span>Graphic Design and Multimedia Production</span>
-                        </li>
-                        <li data-filter="4">
-                            <span>Web Development and Design</span>
-                        </li>
-                        <li data-filter="5">
-                            <span>Animation</span>
-                        </li>
-                        <li data-filter="6">
-                            <span>Modeling and Rendering</span>
-                        </li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="box-content">
+          <div class="section-title">
+            <h3>My Portfolio</h3>
+          </div>
+          <div class="portfolio-filter-menu">
+            <ul>
+              <li data-filter="all" class="active">
+                <span>See All</span>
+              </li>
+              <li data-filter="1">
+                <span>Web Development</span>
+              </li>
+              <li data-filter="2">
+                <span>UX/UI & Web Design</span>
+              </li>
+              <li data-filter="3">
+                <span>Games & Interactive Projects</span>
+              </li>
+            </ul>
+          </div>
 
-                <div class="row no-gutters filtr-container">
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/portfolio1.jpg" class="portfolio-popup">
-                                <img src="images/portfolio1.jpg" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Classic Minimalist Door</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Graphic Design</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+          <div class="row no-gutters filtr-container">
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="1"
+            >
+              <div class="content-image">
+                <a
+                  href="https://lab.visitbogota.co/mapas-bogota/"
+                  class="portfolio-popup"
+                  target="_blank"
+                >
+                  <img src="images/mapasBogota.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>Bogotá Tourist Map Web App</h4>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1">
-                        <div class="content-image">
-                            <a href="images/portfolio2.jpg" class="portfolio-popup">
-                                <img src="images/portfolio2.jpg" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Green Succulent Plants</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Nature Plant</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="subtitle">
+                      <span
+                        >Interactive tourism map of Bogotá built with HTML, CSS,
+                        and JS. Integrated public APIs to display cultural sites
+                        and directions via public transportation.</span
+                      >
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="2, 1">
-                        <div class="content-image">
-                            <a href="images/portfolio3.jpg" class="portfolio-popup">
-                                <img src="images/portfolio3.jpg" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Yellow Rose Pale Plant</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Flower Plant</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3">
-                        <div class="content-image">
-                            <a href="images/portfolio4.jpg" class="portfolio-popup">
-                                <img src="images/portfolio4.jpg" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Succulent Plant in Pot</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Plant House</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="1, 2">
-                        <div class="content-image">
-                            <a href="images/portfolio5.jpg" class="portfolio-popup">
-                                <img src="images/portfolio5.jpg" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Photo of Green Cactus</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Plant House</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 filtr-item" data-category="3, 1">
-                        <div class="content-image">
-                            <a href="images/portfolio6.jpg" class="portfolio-popup">
-                                <img src="images/portfolio6.jpg" alt="">
-                                <div class="image-overlay"></div>
-                                <div class="portfolio-caption">
-                                    <div class="title">
-                                        <h4>Two Feet of Two Ferns</h4>
-                                    </div>
-                                    <div class="subtitle">
-                                        <span>Graphic Design</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                  </div>
+                </a>
+              </div>
             </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="1"
+            >
+              <div class="content-image">
+                <a
+                  href="https://bilingualchildcaretraining.com/"
+                  target="_blank"
+                  class="portfolio-popup"
+                >
+                  <img src="images/webBCCT.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>BCCT Website</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Custom-coded website using HTML, CSS, JS, and PHP, with
+                        WordPress as CMS. Focused on UX, SEO, and responsive
+                        design for Bilingual Child Care Training.</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="1"
+            >
+              <div class="content-image">
+                <a
+                  href="https://bilingualchildcaretraining.com/directorio-daycares/"
+                  target="_blank"
+                  class="portfolio-popup"
+                >
+                  <img src="images/directorioDaycares.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>BCCT Daycare Directory</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Interactive daycare directory developed using custom
+                        code and dynamic data. Includes search, filters, and
+                        responsive design for ease of use.</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="1, 2"
+            >
+              <div class="content-image">
+                <a
+                  href="https://little-two-stars-gfdc.acuarela.app/"
+                  class="portfolio-popup"
+                  target="_blank"
+                >
+                  <img src="images/daycareTemplate.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>Daycare Website Template</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Custom-designed website template for daycare centers,
+                        built with HTML, CSS, and JS. Integrated with WordPress
+                        to allow easy content management and scalability.</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="1"
+            >
+              <div class="content-image">
+                <a
+                  href="https://bilingualchildcaretraining.com/miembros/"
+                  class="portfolio-popup"
+                  target="_blank"
+                >
+                  <img src="images/portalMiembros.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>BCCT Members Portal</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Private user portal for daycares with login,
+                        registration, and personalized access to weekly
+                        activities and service management. Built with custom PHP
+                        and JS.</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="1, 2"
+            >
+              <div class="content-image">
+                <a
+                  href="https://www.naskadigital.com/programas-de-formacion/bim-interventoria-supervision-y-auditoria/"
+                  class="portfolio-popup"
+                  target="_blank"
+                >
+                  <img src="images/paginasNaska.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>Custom WP Management</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Managed and customized pages for Naska Digital's
+                        training programs using a custom WordPress theme and
+                        Elementor.</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="2"
+            >
+              <div class="content-image">
+                <a
+                  href="https://www.figma.com/proto/Xm8aoFwCGUNwISDTTE9gbS/PedaleaALaMili?node-id=103-251&starting-point-node-id=11%3A4"
+                  class="portfolio-popup"
+                  target="_blank"
+                >
+                  <img src="images/pedalea.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>Pedalea a la Mili – Bike Route App</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Prototype for a university bike app to promote cycling
+                        through 6 student-led routes. Users can view routes,
+                        join groups, and access emergency/location tools.</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="2"
+            >
+              <div class="content-image">
+                <a
+                  href="https://www.figma.com/proto/LIy8dqzqXVhnb5sesEGF5y/Allvoices---FInal-Design?node-id=213-18485&starting-point-node-id=81%3A11930"
+                  class="portfolio-popup"
+                  target="_blank"
+                >
+                  <img src="images/all4voicing.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>All4Voicing</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Prototype designed to streamline workflow for Dicapta’s
+                        accessibility services. Focused on clarity, usability,
+                        and content organization for diverse users</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="2, 3"
+            >
+              <div class="content-image">
+                <a
+                  href="https://www.figma.com/proto/lTdmbuvuZWzYSznkSqXzBg/Propuesta?node-id=355-716&starting-point-node-id=355%3A265&scaling=contain&content-scaling=fixed"
+                  class="portfolio-popup"
+                  target="_blank"
+                >
+                  <img src="images/estelar.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>Estelar</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Educational video game created for Fundación SURCOS to
+                        support sensory and cognitive development in children
+                        with autism. Developed in Unity with user-centered
+                        design and interactive features.</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="3"
+            >
+              <div class="content-image">
+                <a
+                  href="https://nairbio.itch.io/contraentrega"
+                  class="portfolio-popup"
+                  target="_blank"
+                >
+                  <img src="images/contraentrega.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>Contraentrega</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Arcade game made in Unreal using Blueprints. Collect
+                        boxes before time runs out across obstacle-filled levels
+                        and difficulty modes.</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-md-4 col-sm-12 col-xs-12 filtr-item"
+              data-category="3"
+            >
+              <div class="content-image">
+                <a
+                  href="https://julieib03.itch.io/proyecto-final-memorias-de-kennedy"
+                  class="portfolio-popup"
+                  target="_blank"
+                >
+                  <img src="images/memoriasKennedy.png" alt="" />
+                  <div class="image-overlay"></div>
+                  <div class="portfolio-caption">
+                    <div class="title">
+                      <h4>Interactive Historical Experience</h4>
+                    </div>
+                    <div class="subtitle">
+                      <span
+                        >Interactive Unity experience that narrates the history
+                        of Bogotá’s Kennedy locality through the transformation
+                        of its first house.
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- end portfolio -->
 
     <!-- contact -->
     <div id="contact" class="contact segments">
-        <div class="container">
-            <div class="box-content">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="content-left">
-                            <div class="section-title section-title-left">
-                                <h3>Contact Me</h3>
-                            </div>
-                            <h2>Connect with me to explore how <span style="color: #ff8c05;">I can add value </span>to your next project!</h2>
-                            <ul>
-                                <li>
-                                    <a href="mailto:julie162002@gmail.com" target="_blank"><i class="fab fa-google"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/julieib/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.behance.net/julieaibarra" target="_blank"><i class="fab fa-behance"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/JulieIb03" target="_blank"><i class="fab fa-github"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <div class="content-right">
-                            <form action="contact-form.php" class="contact-form" id="contact-form" method="post">
-                                <div class="row">
-                                    <div class="col">
-                                        <div id="first-name-field">
-                                            <input type="text" placeholder="First Name" class="form-control" name="form-name">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div id="last-name-field">
-                                            <input type="text" placeholder="Last Name" class="form-control" name="form-name">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div id="email-field">
-                                            <input type="email" placeholder="Email Address" class="form-control" name="form-email">
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div id="subject-field">
-                                            <input type="text" placeholder="Subject" class="form-control" name="form-subject">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div id="message-field">
-                                            <textarea cols="30" rows="5" class="form-control" id="form-message" name="form-message" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="button" type="submit" id="submit" name="submit">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="box-content">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="content-left">
+                <div class="section-title section-title-left">
+                  <h3>Contact Me</h3>
                 </div>
+                <h2>
+                  Connect with me to explore how
+                  <span style="color: #ff8c05; font-size: xxx-large"
+                    >I can add value </span
+                  >to your next project!
+                </h2>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/julieib/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/JulieIb03" target="_blank"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.behance.net/julieaibarra"
+                      target="_blank"
+                      ><i class="fab fa-behance"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="content-right">
+                <form
+                  action="contact-form.php"
+                  class="contact-form"
+                  id="contact-form"
+                  method="post"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div id="first-name-field">
+                        <input
+                          type="text"
+                          placeholder="First Name"
+                          class="form-control"
+                          name="name"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div id="last-name-field">
+                        <input
+                          type="text"
+                          placeholder="Last Name"
+                          class="form-control"
+                          name="lastname"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div id="email-field">
+                        <input
+                          type="email"
+                          placeholder="Email Address"
+                          class="form-control"
+                          name="email"
+                        />
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div id="subject-field">
+                        <input
+                          type="text"
+                          placeholder="Subject"
+                          class="form-control"
+                          name="subject"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div id="message-field">
+                        <textarea
+                          cols="30"
+                          rows="5"
+                          class="form-control"
+                          id="form-message"
+                          name="message"
+                          placeholder="Message"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="button"
+                    type="submit"
+                    id="submit"
+                    name="submit"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- end contact -->
 
     <!-- footer -->
     <div class="footer segments">
-        <div class="container">
-            <div class="box-content">
-                <p>Copyright, 2023 © All Right Reserved</p>
-            </div>
+      <div class="container">
+        <div class="box-content">
+          <p>Copyright, 2023 © All Right Reserved</p>
         </div>
+      </div>
     </div>
     <!-- end footer -->
 
@@ -567,8 +969,5 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/contact-form.js"></script>
     <script src="js/main.js"></script>
-
-
-</body>
-
+  </body>
 </html>

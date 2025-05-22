@@ -922,69 +922,81 @@
                       ></textarea>
                     </div>
                   </div>
-                  <button class="button" type="submit">Send Message</button>
+
+                  <!-- Button and loader in same container -->
+                  <div style="text-align: center; margin-top: 20px">
+                    <button class="button" type="submit" id="submit-button">
+                      Send Message
+                    </button>
+                    <div
+                      id="loader"
+                      class="loader"
+                      style="display: none; margin: 0 auto"
+                    ></div>
+                  </div>
                 </form>
 
-                <!-- Loader (invisible at start) -->
-                <div
-                  id="loader"
-                  class="loader"
-                  style="display: none; margin: 20px auto"
-                ></div>
-
-                <!-- Success message (invisible at start) -->
+                <!-- Success message (hidden at start) -->
                 <div
                   id="success-message"
                   style="display: none; text-align: center; padding: 20px"
                 >
                   <h3>Your message has been sent!</h3>
                   <p>
-                    Thank you for reaching out and for your trust. I’ll get back
-                    to you as soon as possible.
+                    Thank you for getting in touch and trusting me. I'll respond
+                    as soon as possible.
                   </p>
                 </div>
 
                 <script>
-                  document
-                    .getElementById("contact-form")
-                    .addEventListener("submit", function (e) {
-                      e.preventDefault();
+                  const form = document.getElementById("contact-form");
+                  const button = document.getElementById("submit-button");
+                  const loader = document.getElementById("loader");
+                  const successMessage =
+                    document.getElementById("success-message");
 
-                      const form = e.target;
-                      const formData = new FormData(form);
-                      const loader = document.getElementById("loader");
-                      const successMessage =
-                        document.getElementById("success-message");
+                  form.addEventListener("submit", function (e) {
+                    e.preventDefault();
 
-                      // Show loader
-                      loader.style.display = "block";
+                    // Hide button and show loader
+                    button.style.display = "none";
+                    loader.style.display = "block";
 
-                      fetch(
-                        "https://hook.us1.make.com/8m8eipy335ukqkjp7ii8hlms2bcg349q",
-                        {
-                          method: "POST",
-                          body: formData,
+                    const formData = new FormData(form);
+
+                    fetch(
+                      "https://hook.us1.make.com/8m8eipy335ukqkjp7ii8hlms2bcg349q",
+                      {
+                        method: "POST",
+                        body: formData,
+                      }
+                    )
+                      .then((response) => {
+                        loader.style.display = "none";
+                        if (response.ok) {
+                          form.style.display = "none";
+                          successMessage.style.display = "block";
+
+                          // After 3 seconds, reset everything
+                          setTimeout(() => {
+                            successMessage.style.display = "none";
+                            form.reset(); // clear inputs
+                            form.style.display = "block";
+                            button.style.display = "inline-block";
+                          }, 3000);
+                        } else {
+                          alert("Something went wrong. Please try again.");
+                          button.style.display = "inline-block";
+                          loader.style.display = "none";
                         }
-                      )
-                        .then((response) => {
-                          loader.style.display = "none";
-                          if (response.ok) {
-                            form.style.display = "none";
-                            successMessage.style.display = "block";
-                          } else {
-                            alert(
-                              "Something went wrong. Please try again later."
-                            );
-                          }
-                        })
-                        .catch((error) => {
-                          loader.style.display = "none";
-                          console.error("Error:", error);
-                          alert(
-                            "Something went wrong. Please try again later."
-                          );
-                        });
-                    });
+                      })
+                      .catch((error) => {
+                        console.error("Error:", error);
+                        alert("Something went wrong. Please try again.");
+                        button.style.display = "inline-block";
+                        loader.style.display = "none";
+                      });
+                  });
                 </script>
               </div>
             </div>

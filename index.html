@@ -58,19 +58,50 @@
           <div id="navbarTogglerDemo" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a href="#home" class="nav-link">Home</a>
+                <a href="#home" class="nav-link" data-i18n="nav.home">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
+                <a href="#about" class="nav-link" data-i18n="nav.about"
+                  >About</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#resume" class="nav-link" data-i18n="nav.resume"
+                  >Resume</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#portfolio" class="nav-link" data-i18n="nav.portfolio"
+                  >Portfolio</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact"
+                  >Contact</a
+                >
+              </li>
+              <!-- Idioma -->
+              <li class="nav-item dropdown" style="border: 1px solid white; border-radius: 4px;">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="languageDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  data-i18n="nav.language"
+                >
+                  🌐 Language
+                </a>
+                <div class="dropdown-menu" aria-labelledby="languageDropdown" style="background-color: #262626;">
+                  <a class="dropdown-item lang-select" href="#" data-lang="en" style="color: white;"
+                    >🇺🇸 English</a
+                  >
+                  <a class="dropdown-item lang-select" href="#" data-lang="es" style="color: white;"
+                    >🇪🇸 Español</a
+                  >
+                </div>
               </li>
             </ul>
           </div>
@@ -85,10 +116,10 @@
             <div class="row justify-content-center">
               <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="intro-caption">
-                  <span>I am Julie Ibarra</span>
-                  <h2>Multimedia<br />Engineer</h2>
+                  <span data-i18n="home.intro">I am Julie Ibarra</span>
+                  <h2 data-i18n="home.title.line">Multimedia<br />Engineer</h2>
                   <button class="button">
-                    <a href="#contact">Contact Me</a>
+                    <a href="#contact" data-i18n="home.contact">Contact Me</a>
                   </button>
                 </div>
               </div>
@@ -116,11 +147,13 @@
             >
               <div class="content-left">
                 <div class="section-title section-title-left">
-                  <h3>About Me</h3>
+                  <h3 data-i18n="about.title">About Me</h3>
                 </div>
                 <div class="content">
-                  <h2>Focused on Web Development and Design</h2>
-                  <p style="font-size: 16px">
+                  <h2 data-i18n="about.subtitle">
+                    Focused on Web Development and Design
+                  </h2>
+                  <p data-i18n="about.description" style="font-size: 16px">
                     I explore the intersection of technology and human sciences
                     to create thoughtful digital experiences. With a focus on
                     UI/UX and frontend development, I approach each project
@@ -128,7 +161,6 @@
                     involvement in medieval history reconstruction also brings a
                     unique perspective to my design process.
                   </p>
-                  <!-- <img src="images/CollagePortafolio.png" alt=""> -->
                   <div class="division"></div>
                 </div>
               </div>
@@ -147,20 +179,26 @@
       <div class="container">
         <div class="box-content">
           <div class="section-title">
-            <h3>My Resume</h3>
+            <h3 data-i18n="resume.title">My Resume</h3>
           </div>
           <div class="owl-carousel owl-theme">
+            <!-- experience -->
             <div class="content">
-              <!-- my experience -->
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="content-left">
                     <div class="title-resume">
-                      <h3>Experience</h3>
+                      <h3 data-i18n="resume.experience.title">Experience</h3>
                       <h2>
-                        In different areas of
-                        <span> development, design </span> and
-                        <span> multimedia production</span>
+                        <span data-i18n="resume.experience.subtitle.1"
+                          >In different areas of</span
+                        >
+                        <span data-i18n="resume.experience.subtitle.2"
+                          >development, design</span
+                        >
+                        <span data-i18n="resume.experience.subtitle.3"
+                          >and multimedia production</span
+                        >
                       </h2>
                     </div>
                   </div>
@@ -170,33 +208,28 @@
                     <ul class="timeline">
                       <li>
                         <h4>Bilingual Child Care Training</h4>
-                        <span>
-                          Fullstack Developer (February, 2024 - Present)
-                        </span>
-                      </li>
-                      <li>
-                        <h4>Oblicua</h4>
-                        <span>
-                          FrontendDeveloper (February, 2025 - May, 2025)
+                        <span data-i18n="resume.experience.job1">
+                          UI Designer & Frontend Developer (February, 2024 -
+                          Present)
                         </span>
                       </li>
                       <li>
                         <h4>Naska Digital</h4>
-                        <span>
+                        <span data-i18n="resume.experience.job2">
                           Web/Multimedia Designer (March, 2023 - September,
                           2023)
                         </span>
                       </li>
                       <li>
-                        <h4>Dicapta</h4>
-                        <span>
+                        <h4>Dicapta (Freelance)</h4>
+                        <span data-i18n="resume.experience.job3">
                           UI Designer - Video Editor (March to April, 2023 -
                           August to September, 2023)
                         </span>
                       </li>
                       <li>
                         <h4>Fundación Surcos</h4>
-                        <span>
+                        <span data-i18n="resume.experience.job4">
                           UI/UX Designer - Unity Developer (March to June, 2023)
                         </span>
                       </li>
@@ -204,18 +237,22 @@
                   </div>
                 </div>
               </div>
-              <!-- end my experience -->
             </div>
+
+            <!-- education -->
             <div class="content">
-              <!-- my education -->
               <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                   <div class="content-left">
                     <div class="title-resume">
-                      <h3>Education</h3>
+                      <h3 data-i18n="resume.education.title">Education</h3>
                       <h2>
-                        Learning experience at
-                        <span>qualified institutions</span>
+                        <span data-i18n="resume.education.subtitle.1"
+                          >Learning experience at</span
+                        >
+                        <span data-i18n="resume.education.subtitle.2"
+                          >qualified institutions</span
+                        >
                       </h2>
                     </div>
                   </div>
@@ -225,19 +262,25 @@
                     <ul class="timeline">
                       <li>
                         <h4>Universidad Militar Nueva Granada</h4>
-                        <span> Multimedia Engineer (2019 - 2024) </span>
+                        <span data-i18n="resume.education.item1"
+                          >Multimedia Engineer (2019 - 2024)</span
+                        >
                       </li>
                       <li>
                         <h4>Udemy</h4>
-                        <span> Modern Web Animations (2025) </span>
+                        <span data-i18n="resume.education.item2"
+                          >Modern Web Animations (2025)</span
+                        >
                       </li>
                       <li>
                         <h4>Lottie Files</h4>
-                        <span> Figma to Lottie Course (2024) </span>
+                        <span data-i18n="resume.education.item3"
+                          >Figma to Lottie Course (2024)</span
+                        >
                       </li>
                       <li>
                         <h4>Naska Digital & Cámara de Comercio de Bogotá</h4>
-                        <span>
+                        <span data-i18n="resume.education.item4">
                           Video game Training Program Certificate (2023)
                         </span>
                       </li>
@@ -245,25 +288,33 @@
                   </div>
                 </div>
               </div>
-              <!-- end my education -->
             </div>
+
+            <!-- skill -->
             <div class="content">
-              <!-- my skill -->
               <div class="my-skill">
                 <div class="row">
                   <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="content-left">
                       <div class="title-resume">
-                        <h3>Skill</h3>
+                        <h3 data-i18n="resume.skills.title">Skill</h3>
                         <h2>
-                          With good <span>Personal</span> and
-                          <span>Professional Skills</span>
+                          <span data-i18n="resume.skills.subtitle.1"
+                            >With good</span
+                          >
+                          <span data-i18n="resume.skills.subtitle.2"
+                            >Personal</span
+                          >
+                          <span data-i18n="resume.skills.subtitle.3"
+                            >and Professional Skills</span
+                          >
                         </h2>
                       </div>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="content-right">
+                      <!-- Accordion buttons -->
                       <div id="accordionSkill" class="accordion">
                         <div class="card">
                           <div id="personalSkill" class="card-header">
@@ -273,14 +324,14 @@
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#collapse1"
-                                aria-expanded="true"
-                                aria-controls="collapse1"
                               >
-                                <i class="fas fa-circle"></i>Professional Skill
+                                <i class="fas fa-circle"></i>
+                                <span data-i18n="resume.skills.professional"
+                                  >Professional Skill</span
+                                >
                               </button>
                             </h2>
                           </div>
-
                           <div
                             id="collapse1"
                             class="collapse collapse-show"
@@ -291,92 +342,70 @@
                               <ul class="personalSkill">
                                 <li>
                                   <div class="skill-title">
-                                    <span
-                                      ><b>Frontend Development</b> - HTML5,
-                                      CSS3, JavaScript, React.js,
-                                      Wordpress</span
-                                    >
+                                    <span data-i18n="skills.frontend">
+                                      <b>Frontend Development</b> - HTML5, CSS3,
+                                      JavaScript, React.js, Wordpress
+                                    </span>
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="98"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 93%"
                                     ></div>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="skill-title">
-                                    <span
-                                      ><b>UX/UI Design</b> - Figma, Design
-                                      Thinking, Usability testing</span
-                                    >
+                                    <span data-i18n="skills.uxui">
+                                      <b>UX/UI Design</b> - Figma, Design
+                                      Thinking, Usability testing
+                                    </span>
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="98"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 87%"
                                     ></div>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="skill-title">
-                                    <span
-                                      ><b>Backend Development</b> - PHP,
-                                      Node.js, REST APIs, database
-                                      integration</span
-                                    >
+                                    <span data-i18n="skills.backend">
+                                      <b>Backend Development</b> - PHP, Node.js,
+                                      REST APIs, database integration
+                                    </span>
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="70"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 85%"
                                     ></div>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="skill-title">
-                                    <span
-                                      ><b>Multimedia Tools </b>- After Effects,
+                                    <span data-i18n="skills.multimedia">
+                                      <b>Multimedia Tools</b> - After Effects,
                                       Adobe Illustrator, Photoshop, Unity,
-                                      Unreal</span
-                                    >
+                                      Unreal
+                                    </span>
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="90"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 75%"
                                     ></div>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="skill-title">
-                                    <span
-                                      ><b>Methodologies</b> - Agile, Scrum</span
-                                    >
+                                    <span data-i18n="skills.methodologies">
+                                      <b>Methodologies</b> - Agile, Scrum
+                                    </span>
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="75"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 70%"
                                     ></div>
                                   </div>
@@ -385,7 +414,6 @@
                             </div>
                           </div>
                         </div>
-
                         <div class="card">
                           <div id="proSkill" class="card-header">
                             <h2>
@@ -394,14 +422,14 @@
                                 type="button"
                                 data-toggle="collapse"
                                 data-target="#collapse2"
-                                aria-expanded="false"
-                                aria-controls="collapse2"
                               >
-                                <i class="fas fa-circle"></i>Personal Skill
+                                <i class="fas fa-circle"></i>
+                                <span data-i18n="resume.skills.personal"
+                                  >Personal Skill</span
+                                >
                               </button>
                             </h2>
                           </div>
-
                           <div
                             id="collapse2"
                             class="collapse"
@@ -412,75 +440,65 @@
                               <ul class="pro-skill">
                                 <li>
                                   <div class="skill-title">
-                                    <span>Research</span>
+                                    <span data-i18n="skills.research"
+                                      >Research</span
+                                    >
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="85"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 93%"
                                     ></div>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="skill-title">
-                                    <span>Communication</span>
+                                    <span data-i18n="skills.communication"
+                                      >Communication</span
+                                    >
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="80"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 87%"
                                     ></div>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="skill-title">
-                                    <span>Creativity</span>
+                                    <span data-i18n="skills.creativity"
+                                      >Creativity</span
+                                    >
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="95"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 75%"
                                     ></div>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="skill-title">
-                                    <span>Teamwork</span>
+                                    <span data-i18n="skills.teamwork"
+                                      >Teamwork</span
+                                    >
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="90"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 70%"
                                     ></div>
                                   </div>
                                 </li>
                                 <li>
                                   <div class="skill-title">
-                                    <span>Adaptability</span>
+                                    <span data-i18n="skills.adaptability"
+                                      >Adaptability</span
+                                    >
                                   </div>
                                   <div class="progress">
                                     <div
                                       class="progress-bar"
-                                      role="progressbar"
-                                      aria-valuenow="95"
-                                      aria-valuemin="0"
-                                      aria-valuemax="100"
                                       style="width: 66%"
                                     ></div>
                                   </div>
@@ -494,8 +512,8 @@
                   </div>
                 </div>
               </div>
-              <!-- end my skill -->
             </div>
+            <!-- end skill -->
           </div>
         </div>
       </div>
@@ -507,33 +525,43 @@
       <div class="container">
         <div class="box-content">
           <div class="section-title">
-            <h3>My Portfolio</h3>
+            <h3 data-i18n="portfolio.title">My Portfolio</h3>
           </div>
           <div class="portfolio-filter-menu">
             <ul>
               <li data-filter="all" class="active">
-                <span>See All</span>
-              </li>
-              <li data-filter="1">
-                <span>Web Development</span>
+                <span data-i18n="portfolio.filters.all">See All</span>
               </li>
               <li data-filter="2">
-                <span>UX/UI & Web Design</span>
+                <span data-i18n="portfolio.filters.uiux"
+                  >UX/UI & Web Design</span
+                >
+              </li>
+              <li data-filter="1">
+                <span data-i18n="portfolio.filters.webdev"
+                  >Web Development</span
+                >
               </li>
               <li data-filter="3">
-                <span>Games & Interactive Projects</span>
+                <span data-i18n="portfolio.filters.games"
+                  >Games & Interactive Projects</span
+                >
               </li>
               <li data-filter="4">
-                <span>Multimedia & Graphic Design</span>
+                <span data-i18n="portfolio.filters.graphic"
+                  >Multimedia & Graphic Design</span
+                >
               </li>
               <li data-filter="5">
-                <span>Video Editing & Motion Graphics</span>
+                <span data-i18n="portfolio.filters.video"
+                  >Video Editing & Motion Graphics</span
+                >
               </li>
             </ul>
           </div>
 
           <div class="row no-gutters filtr-container">
-            <div
+            <!-- <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="1, 2"
             >
@@ -558,7 +586,7 @@
                   </div>
                 </a>
               </div>
-            </div>
+            </div> -->
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="1, 2"
@@ -573,18 +601,21 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>UMNG Research Center Portal</h4>
+                      <h4 data-i18n="project.portal_umng.title">
+                        UMNG Research Center Portal
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
-                        >UI and navigation flow design for the UMNG Research
-                        Center's review portal.</span
-                      >
+                      <span data-i18n="project.portal_umng.description">
+                        UI and navigation flow design for the UMNG Research
+                        Center's review portal.
+                      </span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="2"
@@ -599,18 +630,19 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Acuarela Web</h4>
+                      <h4 data-i18n="project.acuarela.title">Acuarela Web</h4>
                     </div>
                     <div class="subtitle">
-                      <span
-                        >Web and mobile UI design for Acuarela, an app for
-                        daycare management.</span
-                      >
+                      <span data-i18n="project.acuarela.description">
+                        Web and mobile UI design for Acuarela, an app for
+                        daycare management.
+                      </span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="2"
@@ -625,18 +657,21 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Eucalyptus Fest</h4>
+                      <h4 data-i18n="project.eucalyptus.title">
+                        Eucalyptus Fest
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span>
+                      <span data-i18n="project.eucalyptus.description">
                         UI for Eucalyptus Fest 2025, a nature-inspired early
-                        childhood education event.</span
-                      >
+                        childhood education event.
+                      </span>
                     </div>
                   </div>
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="2"
@@ -651,13 +686,15 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Member portal 2.0</h4>
+                      <h4 data-i18n="project.miembros.title">
+                        Member portal 2.0
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
-                        >Redesign of BCCT's member portal structure and UI to
-                        streamline microservices management.</span
-                      >
+                      <span data-i18n="project.miembros.description">
+                        Redesign of BCCT's member portal structure and UI to
+                        streamline microservices management.
+                      </span>
                     </div>
                   </div>
                 </a>
@@ -677,14 +714,14 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>BCCT Website</h4>
+                      <h4 data-i18n="project.webBCCT.title">BCCT Website</h4>
                     </div>
                     <div class="subtitle">
-                      <span>
+                      <span data-i18n="project.webBCCT.description">
                         Custom-coded website using HTML, CSS, JS, and PHP, with
                         WordPress as CMS. Focused on UX, SEO, and responsive
-                        design.</span
-                      >
+                        design.
+                      </span>
                     </div>
                   </div>
                 </a>
@@ -704,11 +741,13 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>BCCT Daycare Directory</h4>
+                      <h4 data-i18n="project.directorio.title">
+                        BCCT Daycare Directory
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
-                        >Daycare directory with filters, search, and responsive
+                      <span data-i18n="project.directorio.description">
+                        Daycare directory with filters, search, and responsive
                         design.
                       </span>
                     </div>
@@ -716,6 +755,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="1, 2"
@@ -730,10 +770,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Daycare Website Template</h4>
+                      <h4 data-i18n="projects.daycare_template.title">
+                        Daycare Website Template
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.daycare_template.description"
                         >Custom daycare site template with WordPress
                         integration.</span
                       >
@@ -742,6 +784,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="1"
@@ -756,10 +799,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>BCCT Members Portal</h4>
+                      <h4 data-i18n="projects.bcct_portal.title">
+                        BCCT Members Portal
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.bcct_portal.description"
                         >Private daycare portal with login and personalized
                         access to weekly activities and service
                         management.</span
@@ -769,6 +814,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="1, 2"
@@ -783,10 +829,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Custom WP Management</h4>
+                      <h4 data-i18n="projects.naska_wp.title">
+                        Custom WP Management
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.naska_wp.description"
                         >Managed and customized pages for Naska Digital's
                         training programs with custom WordPress and
                         Elementor.</span
@@ -796,6 +844,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="5"
@@ -810,10 +859,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Interview with Carolina Garcés – BIM Manager</h4>
+                      <h4 data-i18n="projects.bim_interview.title">
+                        Interview with Carolina Garcés – BIM Manager
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.bim_interview.description"
                         >Insights on how coordination, cohesion, and
                         understanding drive project success.</span
                       >
@@ -822,6 +873,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="5"
@@ -836,10 +888,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>International BIM Supervision Diploma Launch</h4>
+                      <h4 data-i18n="projects.bim_supervision.title">
+                        International BIM Supervision Diploma Launch
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.bim_supervision.description"
                         >Specialized training in construction project control
                         with global BIM certifications.</span
                       >
@@ -848,6 +902,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="5"
@@ -862,10 +917,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>International BIM Infrastructure Diploma Launch</h4>
+                      <h4 data-i18n="projects.bim_infrastructure.title">
+                        International BIM Infrastructure Diploma Launch
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.bim_infrastructure.description"
                         >Cutting-edge training with top tech partners and
                         exclusive global certifications.</span
                       >
@@ -874,6 +931,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="5"
@@ -888,10 +946,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Challenges in BIM Training</h4>
+                      <h4 data-i18n="projects.bim_challenges.title">
+                        Challenges in BIM Training
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.bim_challenges.description"
                         >Key insights on team certification under ISO 19650 at
                         Construcciones Planificadas.</span
                       >
@@ -900,6 +960,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="4"
@@ -914,17 +975,21 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>BIM Training Talk</h4>
+                      <h4 data-i18n="projects.bim_talk.title">
+                        BIM Training Talk
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
-                        >Industry experts share best practices for BIM-based info management.</span
+                      <span data-i18n="projects.bim_talk.description"
+                        >Industry experts share best practices for BIM-based
+                        info management.</span
                       >
                     </div>
                   </div>
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="4"
@@ -939,10 +1004,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>BIM Certification & Competitiveness</h4>
+                      <h4 data-i18n="projects.bim_certification.title">
+                        BIM Certification & Competitiveness
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.bim_certification.description"
                         >How BIM boosts professional value in a digitally
                         transforming construction industry.</span
                       >
@@ -951,6 +1018,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="4"
@@ -965,17 +1033,21 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Case Study – David Aguilera</h4>
+                      <h4 data-i18n="projects.case_study.title">
+                        Case Study – David Aguilera
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
-                        >Collaborative design and construction benefits from BIM, shared by a Naska graduate.</span
+                      <span data-i18n="projects.case_study.description"
+                        >Collaborative design and construction benefits from
+                        BIM, shared by a Naska graduate.</span
                       >
                     </div>
                   </div>
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="2"
@@ -990,10 +1062,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Pedalea a la Mili – Bike Route App</h4>
+                      <h4 data-i18n="projects.pedalea.title">
+                        Pedalea a la Mili – Bike Route App
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.pedalea.description"
                         >Bike app prototype with routes, groups, and emergency
                         tools.</span
                       >
@@ -1002,6 +1076,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="2"
@@ -1016,10 +1091,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>All4Voicing</h4>
+                      <h4 data-i18n="projects.all4voicing.title">
+                        All4Voicing
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.all4voicing.description"
                         >Workflow prototype for Dicapta's accessibility
                         services.</span
                       >
@@ -1028,6 +1105,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="2, 3"
@@ -1042,10 +1120,10 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Estelar</h4>
+                      <h4 data-i18n="projects.estelar.title">Estelar</h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.estelar.description"
                         >Educational video game created in Unity, for sensory
                         development in autistic children.</span
                       >
@@ -1054,6 +1132,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="3"
@@ -1068,10 +1147,12 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Contraentrega</h4>
+                      <h4 data-i18n="projects.contraentrega.title">
+                        Contraentrega
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.contraentrega.description"
                         >Arcade game in Unreal: collect boxes, beat the
                         clock.</span
                       >
@@ -1080,6 +1161,7 @@
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="3"
@@ -1094,18 +1176,21 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Interactive Historical Experience</h4>
+                      <h4 data-i18n="projects.kennedy_experience.title">
+                        Interactive Historical Experience
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
+                      <span data-i18n="projects.kennedy_experience.description"
                         >Unity experience on Kennedy's history through its first
-                        house.
-                      </span>
+                        house.</span
+                      >
                     </div>
                   </div>
                 </a>
               </div>
             </div>
+
             <div
               class="col-md-4 col-sm-12 col-xs-12 filtr-item"
               data-category="4"
@@ -1120,12 +1205,15 @@
                   <div class="image-overlay"></div>
                   <div class="portfolio-caption">
                     <div class="title">
-                      <h4>Hávamál 2D Animation</h4>
+                      <h4 data-i18n="projects.havamal.title">
+                        Hávamál 2D Animation
+                      </h4>
                     </div>
                     <div class="subtitle">
-                      <span
-                        >2D animated excerpt from the Hávamál using Illustrator and After Effects.
-                      </span>
+                      <span data-i18n="projects.havamal.description"
+                        >2D animated excerpt from the Hávamál using Illustrator
+                        and After Effects.</span
+                      >
                     </div>
                   </div>
                 </a>
@@ -1145,13 +1233,21 @@
             <div class="col-md-6 col-sm-12 col-xs-12">
               <div class="content-left">
                 <div class="section-title section-title-left">
-                  <h3>Contact Me</h3>
+                  <h3 data-i18n="contact.title">Contact Me</h3>
                 </div>
-                <h2>
+                <h2
+                  data-i18n="contact.subtitle_part1"
+                  style="margin-bottom: 20px"
+                >
                   Connect with me to explore how
-                  <span style="color: #ff8c05; font-size: xxx-large"
-                    >I can add value </span
-                  >to your next project!
+                </h2>
+                <span
+                  style="color: #ff8c05; font-size: xxx-large"
+                  data-i18n="contact.highlight"
+                  >I can add value</span
+                >
+                <h2 data-i18n="contact.subtitle_part2">
+                  to your next project!
                 </h2>
                 <ul>
                   <li>
@@ -1183,6 +1279,7 @@
                     <div class="col">
                       <input
                         type="text"
+                        data-i18n-placeholder="form.first_name"
                         placeholder="First Name"
                         class="form-control"
                         name="name"
@@ -1192,6 +1289,7 @@
                     <div class="col">
                       <input
                         type="text"
+                        data-i18n-placeholder="form.last_name"
                         placeholder="Last Name"
                         class="form-control"
                         name="lastname"
@@ -1203,6 +1301,7 @@
                     <div class="col">
                       <input
                         type="email"
+                        data-i18n-placeholder="form.email"
                         placeholder="Email Address"
                         class="form-control"
                         name="email"
@@ -1212,6 +1311,7 @@
                     <div class="col">
                       <input
                         type="text"
+                        data-i18n-placeholder="form.subject"
                         placeholder="Subject"
                         class="form-control"
                         name="subject"
@@ -1226,6 +1326,7 @@
                         rows="5"
                         class="form-control"
                         name="message"
+                        data-i18n-placeholder="form.message"
                         placeholder="Message"
                         required
                       ></textarea>
@@ -1234,7 +1335,12 @@
 
                   <!-- Button and loader in same container -->
                   <div style="text-align: center; margin-top: 20px">
-                    <button class="button" type="submit" id="submit-button">
+                    <button
+                      class="button"
+                      type="submit"
+                      id="submit-button"
+                      data-i18n="form.send_button"
+                    >
                       Send Message
                     </button>
                     <div
@@ -1250,8 +1356,8 @@
                   id="success-message"
                   style="display: none; text-align: center; padding: 20px"
                 >
-                  <h3>Your message has been sent!</h3>
-                  <p>
+                  <h3 data-i18n="success.title">Your message has been sent!</h3>
+                  <p data-i18n="success.message">
                     Thank you for getting in touch and trusting me. I'll respond
                     as soon as possible.
                   </p>
@@ -1319,7 +1425,9 @@
     <div class="footer segments">
       <div class="container">
         <div class="box-content">
-          <p>Copyright, 2025 © All Right Reserved</p>
+          <p data-i18n="footer.copyright">
+            Copyright, 2025 © All Right Reserved
+          </p>
         </div>
       </div>
     </div>

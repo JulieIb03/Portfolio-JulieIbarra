@@ -704,6 +704,11 @@ span {
     padding-left: 0;
   }
 
+  .nav-item.dropdown {
+    border: 1px solid white;
+    border-radius: 4px;
+  }
+
   .home-intro .intro-content .intro-caption span {
     display: inline-block;
     margin-bottom: 20px;
